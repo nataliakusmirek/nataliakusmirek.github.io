@@ -166,22 +166,33 @@
   </body>
 
   <style>
-   /* Responsive styling for smaller screens */
-@media screen and (max-width: 768px) {
+        /* Add your existing styles here */
+
+/* Mobile Styles for iPhone */
+@media screen and (max-width: 375px) {
   body {
     width: 100%;
-    max-width: 100%;
     margin: 0;
     padding: 0;
   }
 
-  /* Update font sizes and margins for better mobile readability */
   #hi {
-    font-size: 25px;
+    font-size: 20px;
   }
 
   #name {
     font-size: 30px;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Adjust margin and padding for better spacing on mobile */
+  #about {
+    margin-top: 50px;
+    margin-bottom: 150px;
   }
 
   #about_flowers {
@@ -194,18 +205,36 @@
     padding-right: 20px;
   }
 
-  /* Adjust styles for the timeline section */
+  /* Make the timeline items stack vertically */
   #timeline {
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
   }
 
   #step1,
   #step2,
   #step3 {
     margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Center navigation links */
+  .navbar-nav {
+    justify-content: center;
+  }
+
+  .nav-link {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 14px;
+  }
+
+  /* Adjust font size for footer */
+  footer {
+    font-size: 10px;
   }
 }
+
 
     @keyframes fadeIn {
   from {
