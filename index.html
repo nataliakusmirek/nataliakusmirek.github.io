@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -33,18 +34,18 @@
     </nav>
 
     <div class="text-center" style="margin-top: 230px">
-        <h3 style="font-size:50px;" class="fade-in-element"><b>hi, i'm</b></h3>
-        <h1 style="font-size:75px; color:#9782CD;  font-family: Libre; "class="fade-in-element"><b>Natalia Kusmirek</b></h1>
+        <h3 id="hi"style="font-size:50px;" class="fade-in-element"><b>hi, i'm</b></h3>
+        <h1 id="name"style="font-size:75px; color:#9782CD;  font-family: Libre; "class="fade-in-element"><b>Natalia Kusmirek</b></h1>
         <img src="images/arrow.png" style="width:25px; height:25px; margin-top:100px;" alt="arrow">
         <img src="images/flowers.png" style="width:525px;height:500px; margin-top:220px" class="position-absolute top-0 start-0" alt="flowers">
         <img src="images/flowers.png" style="width:525px;height:500px; margin-top:220px; transform: rotateY(180deg)" class="position-absolute top-0 end-0" alt="flowers">
     </div>
 
     <div id="about" style="margin-top:150px; margin-bottom:300px;">
-      <img src="images/flowers.png" style="width:525px;height:500px; margin-top:700px; transform: scaleY(-1)" class="position-absolute top-0 start-0" alt="flowers">
-      <img src="images/flowers.png" style="width:525px;height:500px; margin-top:700px; transform: scale(-1,-1)" class="position-absolute top-0 end-0" alt="flowers">
+      <img id="about_flowers" src="images/flowers.png" style="width:525px;height:500px; margin-top:700px; transform: scaleY(-1)" class="position-absolute top-0 start-0" alt="flowers">
+      <img id="about_flowers"src="images/flowers.png" style="width:525px;height:500px; margin-top:700px; transform: scale(-1,-1)" class="position-absolute top-0 end-0" alt="flowers">
         <h2 class="text-center" style="font-size:30px; padding-top:90px"><b>about me</b></h2>
-        <p class="top-150 start-50 translate-middle" style="font-family: Libre; position: absolute; color: #9782CD; width:620px; padding-top:270px; padding-right:300px; font-size:15px;">My name is Natalia and I am currently attending Worcester Polytechnic Institute for Computer Science and Music. I love traveling, vlogging, socializing, and creating original work, whether that be this website or a composition piece!</p>
+        <p id="abouttxt" class="top-150 start-50 translate-middle" style="font-family: Libre; position: absolute; color: #9782CD; width:620px; padding-top:270px; padding-right:300px; font-size:15px;">My name is Natalia and I am currently attending Worcester Polytechnic Institute for Computer Science and Music. I love traveling, vlogging, socializing, and creating original work, whether that be this website or a composition piece!</p>
         <img src="images/me.jpg" style="position:absolute; width: 260px; height:260px; margin-left:800px; margin-top:30px;"  alt="me">
         <img src="images/i1.jpg" style="position:absolute; width: 160px; height:160px; margin-left:300px; margin-top:370px;" >
         <p style="position:absolute; width:180px; font-family: Libre; color: #9782CD;font-size: 11px; margin-left: 470px; margin-top:430px;">I love exploring new cafes when I travel, such as this one in Old Quebec (the best coffee I've ever had).</p>
@@ -165,7 +166,23 @@
   </body>
 
   <style>
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 768px) 
+    {
+      #hi{
+        font-size:25px;
+      }
+      #name
+      {
+        font-size:30px;
+      }
+      #about_flowers
+      {
+        opacity: 0;
+      }
+      #abouttxt
+      {
+        margin-left:200px;
+      }
     }
     @keyframes fadeIn {
   from {
