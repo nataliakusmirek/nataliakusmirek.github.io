@@ -166,24 +166,47 @@
   </body>
 
   <style>
-    @media screen and (max-width: 768px) 
-    {
-      #hi{
-        font-size:25px;
-      }
-      #name
-      {
-        font-size:30px;
-      }
-      #about_flowers
-      {
-        opacity: 0;
-      }
-      #abouttxt
-      {
-        margin-left:200px;
-      }
-    }
+   /* Responsive styling for smaller screens */
+@media screen and (max-width: 768px) {
+  body {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Update font sizes and margins for better mobile readability */
+  #hi {
+    font-size: 25px;
+  }
+
+  #name {
+    font-size: 30px;
+  }
+
+  #about_flowers {
+    display: none;
+  }
+
+  #abouttxt {
+    margin-left: 20px;
+    width: 100%;
+    padding-right: 20px;
+  }
+
+  /* Adjust styles for the timeline section */
+  #timeline {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #step1,
+  #step2,
+  #step3 {
+    margin-bottom: 20px;
+  }
+}
+
     @keyframes fadeIn {
   from {
     opacity: 0; /* Start the animation with opacity 0 (completely transparent) */
