@@ -1,6 +1,22 @@
-
 <!doctype html>
 <html lang="en">
+  <script>
+    // Function to check if the screen size matches iPhone
+    function isIPhoneScreenSize() {
+      return window.matchMedia("(max-width: 480px)").matches;
+    }
+  
+    // Function to redirect to the iPhone-specific page
+    function redirectToIPhonePage() {
+      if (isIPhoneScreenSize()) {
+        window.location.href = "iphone.html";
+      }
+    }
+  
+    // Call the function when the page loads
+    window.onload = redirectToIPhonePage;
+  </script>
+  
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -166,76 +182,7 @@
   </body>
 
   <style>
-        /* Add your existing styles here */
-
-/* Mobile Styles for iPhone */
-@media screen and (max-width: 375px) {
-  body {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-  }
-
-  #hi {
-    font-size: 20px;
-  }
-
-  #name {
-    font-size: 30px;
-  }
-
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-
-  /* Adjust margin and padding for better spacing on mobile */
-  #about {
-    margin-top: 50px;
-    margin-bottom: 150px;
-  }
-
-  #about_flowers {
-    display: none;
-  }
-
-  #abouttxt {
-    margin-left: 20px;
-    width: 100%;
-    padding-right: 20px;
-  }
-
-  /* Make the timeline items stack vertically */
-  #timeline {
-    flex-direction: column;
-  }
-
-  #step1,
-  #step2,
-  #step3 {
-    margin-bottom: 20px;
-    width: 100%;
-    text-align: center;
-  }
-
-  /* Center navigation links */
-  .navbar-nav {
-    justify-content: center;
-  }
-
-  .nav-link {
-    padding-left: 20px;
-    padding-right: 20px;
-    font-size: 14px;
-  }
-
-  /* Adjust font size for footer */
-  footer {
-    font-size: 10px;
-  }
-}
-
-
+  
     @keyframes fadeIn {
   from {
     opacity: 0; /* Start the animation with opacity 0 (completely transparent) */
